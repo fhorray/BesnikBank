@@ -2,23 +2,36 @@
 .header-menu {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 3rem 0;
+  justify-content: space-between;
+  padding: 3rem 18rem;
+
+  &__logo {
+    margin-left: -25rem;
+  }
 
   // li's style
   .menu-items {
     display: flex;
-    gap: 2.5rem;
-
+    gap: 1rem;
     & li {
       list-style: none;
       text-transform: uppercase;
       font-weight: 400;
       font-size: 1.4rem;
+      padding: 2rem 0;
 
       & a,
       & a:active {
         color: $link-color;
+        display: inline-block;
+        padding: 1.5rem 2rem;
+        transition: all 0.3s;
+
+        &:hover {
+          color: #ff8a1f;
+          background-color: rgba(27, 27, 27, 0.04);
+          border-radius: 0.5rem;
+        }
       }
     }
   }
@@ -33,6 +46,12 @@
     align-items: center;
     justify-content: center;
     border: 1px solid $stroke-color;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $stroke-color;
+      border: 1px solid #ccc;
+    }
   }
   //END Shopping icon style
 }
@@ -49,7 +68,6 @@
 
     .left__title {
       @include h1Title;
-      margin: 0;
 
       & span {
         display: block;
@@ -99,6 +117,14 @@
       left: 8rem;
       font-size: 1.9rem;
       color: #222223;
+      transition: all 0.3s;
+      padding: 1.3rem 2rem;
+      border-radius: 0.5rem;
+
+      &:hover {
+        color: #ff8a1f;
+        background-color: rgba(27, 27, 27, 0.04);
+      }
     }
   }
 

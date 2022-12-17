@@ -114,6 +114,7 @@
 
       & img {
         height: 6rem;
+        filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.07));
       }
 
       &-info {
@@ -182,6 +183,17 @@
       border: none;
       font-size: inherit;
       font-weight: 600;
+      transition: all 0.3s;
+
+      &:hover {
+        transform: translateY(-0.5rem);
+        box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+      }
+
+      &:active {
+        transform: translateY(-0.2rem);
+        box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
+      }
     }
   }
 

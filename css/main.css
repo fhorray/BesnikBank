@@ -20,19 +20,30 @@ a {
 .header-menu {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 3rem 0; }
+  justify-content: space-between;
+  padding: 3rem 18rem; }
+  .header-menu__logo {
+    margin-left: -25rem; }
   .header-menu .menu-items {
     display: flex;
-    gap: 2.5rem; }
+    gap: 1rem; }
     .header-menu .menu-items li {
       list-style: none;
       text-transform: uppercase;
       font-weight: 400;
-      font-size: 1.4rem; }
+      font-size: 1.4rem;
+      padding: 2rem 0; }
       .header-menu .menu-items li a,
       .header-menu .menu-items li a:active {
-        color: #404041; }
+        color: #404041;
+        display: inline-block;
+        padding: 1.5rem 2rem;
+        transition: all 0.3s; }
+        .header-menu .menu-items li a:hover,
+        .header-menu .menu-items li a:active:hover {
+          color: #ff8a1f;
+          background-color: rgba(27, 27, 27, 0.04);
+          border-radius: 0.5rem; }
   .header-menu .shopping-icon {
     width: 4rem;
     height: 4rem;
@@ -40,7 +51,11 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #dfdfdf; }
+    border: 1px solid #dfdfdf;
+    transition: all 0.3s; }
+    .header-menu .shopping-icon:hover {
+      background-color: #dfdfdf;
+      border: 1px solid #ccc; }
 
 .header-hero-info {
   display: flex;
@@ -52,8 +67,7 @@ a {
     margin-top: -5rem; }
     .header-hero-info__left .left__title {
       font-family: "Bai Jamjuree", sans-serif;
-      font-size: 8rem;
-      margin: 0; }
+      font-size: 8rem; }
       .header-hero-info__left .left__title span {
         display: block; }
       .header-hero-info__left .left__title-more::after {
@@ -86,7 +100,13 @@ a {
       bottom: 3.5rem;
       left: 8rem;
       font-size: 1.9rem;
-      color: #222223; }
+      color: #222223;
+      transition: all 0.3s;
+      padding: 1.3rem 2rem;
+      border-radius: 0.5rem; }
+      .header-hero-info .btn-get-card a:hover {
+        color: #ff8a1f;
+        background-color: rgba(27, 27, 27, 0.04); }
   .header-hero-info__right img {
     width: 85rem; }
 
@@ -197,7 +217,8 @@ a {
       justify-content: flex-start;
       gap: 4rem; }
       .third-benefits__info__item img {
-        height: 6rem; }
+        height: 6rem;
+        filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.07)); }
       .third-benefits__info__item-info {
         height: 60%;
         display: flex;
@@ -244,7 +265,14 @@ a {
       color: #fff;
       border: none;
       font-size: inherit;
-      font-weight: 600; }
+      font-weight: 600;
+      transition: all 0.3s; }
+      .newsletter-section__right a:hover {
+        transform: translateY(-0.5rem);
+        box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3); }
+      .newsletter-section__right a:active {
+        transform: translateY(-0.2rem);
+        box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.3); }
   .newsletter-section__credit-card {
     width: 60rem;
     position: relative;
@@ -258,14 +286,14 @@ footer {
   height: 18.5rem;
   padding: 5rem;
   margin-bottom: 5rem;
-  gap: 10rem; }
+  gap: 7rem; }
   footer .left-menu {
     display: flex;
     justify-content: space-evenly;
     align-items: center; }
     footer .left-menu .left-menu__nav ul {
       display: flex;
-      gap: 3rem; }
+      gap: 1rem; }
       footer .left-menu .left-menu__nav ul li {
         list-style: none;
         text-transform: uppercase;
@@ -282,16 +310,87 @@ footer {
         color: #404041; }
         footer .left-menu .right-menu__nav ul li img {
           height: 1.5rem; }
-    footer .left-menu a, footer .left-menu a:active {
-      color: #404041; }
+    footer .left-menu a,
+    footer .left-menu a:active {
+      color: #404041;
+      display: inline-block;
+      padding: 1.5rem 1rem;
+      transition: all 0.3s; }
+      footer .left-menu a:hover,
+      footer .left-menu a:active:hover {
+        color: #ff8a1f;
+        background-color: rgba(27, 27, 27, 0.04);
+        border-radius: 0.5rem; }
   footer .attribution {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30rem;
+    padding: 0rem 30rem 7rem 30rem;
     color: rgba(27, 27, 27, 0.35); }
+    footer .attribution a {
+      color: rgba(27, 27, 27, 0.35);
+      font-weight: 600;
+      transition: all 0.2s; }
+      footer .attribution a:hover {
+        color: #ff8a1f; }
     footer .attribution__line-footer {
-      width: 40%;
+      width: 60%;
       height: 2px;
       background-color: rgba(27, 27, 27, 0.35); }
+
+@keyframes toRight {
+  0% {
+    transform: translateX(-10rem);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes toLeft {
+  0% {
+    transform: translateX(10rem);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes toTop {
+  0% {
+    transform: translateY(10rem);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.banking {
+  animation: toRight 1s ease-out; }
+
+.more-smart {
+  animation: toLeft 1s ease-out; }
+
+.left__title-more::after {
+  animation: fadeIn 1s ease-out 3s;
+  animation-fill-mode: backwards; }
+
+.header-hero-info__left__description {
+  animation: toTop 1s ease-out 0.5s;
+  animation-fill-mode: backwards; }
+
+.btn-get-card__box-img {
+  animation: toRight 1s ease-out 1s;
+  animation-fill-mode: backwards; }
+
+.btn-get-card a {
+  animation: toTop 1s ease-out 2s;
+  animation-fill-mode: backwards; }
+
+.header-hero-info__right {
+  animation: toLeft 1s ease-in 0.5s;
+  animation-fill-mode: backwards; }

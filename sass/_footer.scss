@@ -7,7 +7,7 @@ footer {
   height: 18.5rem;
   padding: 5rem;
   margin-bottom: 5rem;
-  gap: 10rem;
+  gap: 7rem;
 
   .left-menu {
     display: flex;
@@ -17,7 +17,7 @@ footer {
     .left-menu__nav {
       & ul {
         display: flex;
-        gap: 3rem;
+        gap: 1rem;
         & li {
           list-style: none;
           text-transform: uppercase;
@@ -32,11 +32,13 @@ footer {
         display: flex;
         align-items: center;
         gap: 3rem;
+
         & li {
           list-style: none;
           font-weight: 600;
           font-size: 1.4rem;
           color: #404041;
+
           & img {
             height: 1.5rem;
           }
@@ -46,7 +48,16 @@ footer {
 
     & a,
     & a:active {
-      color: #404041;
+      color: $link-color;
+      display: inline-block;
+      padding: 1.5rem 1rem;
+      transition: all 0.3s;
+
+      &:hover {
+        color: #ff8a1f;
+        background-color: rgba(27, 27, 27, 0.04);
+        border-radius: 0.5rem;
+      }
     }
   }
 
@@ -55,11 +66,21 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30rem;
+    padding: 0rem 30rem 7rem 30rem;
     color: rgba(27, 27, 27, 0.35);
 
+    & a {
+      color: rgba(27, 27, 27, 0.35);
+      font-weight: 600;
+      transition: all 0.2s;
+
+      &:hover {
+        color: #ff8a1f;
+      }
+    }
+
     &__line-footer {
-      width: 40%;
+      width: 60%;
       height: 2px;
       background-color: rgba(27, 27, 27, 0.35);
     }

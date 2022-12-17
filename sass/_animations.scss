@@ -1,0 +1,84 @@
+// To Right
+@keyframes toRight {
+  0% {
+    transform: translateX(-10rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+// To  Left
+@keyframes toLeft {
+  0% {
+    transform: translateX(10rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+// To top
+@keyframes toTop {
+  0% {
+    transform: translateY(10rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+// Fade In
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.banking {
+  animation: toRight 1s ease-out;
+}
+
+.more-smart {
+  animation: toLeft 1s ease-out;
+}
+
+.left__title-more::after {
+  animation: fadeIn 1s ease-out 3s;
+  animation-fill-mode: backwards;
+}
+
+.header-hero-info__left__description {
+  animation: toTop 1s ease-out 0.5s;
+  animation-fill-mode: backwards;
+}
+
+.btn-get-card__box-img {
+  animation: toRight 1s ease-out 1s;
+  animation-fill-mode: backwards;
+}
+
+.btn-get-card a {
+  animation: toTop 1s ease-out 2s;
+  animation-fill-mode: backwards;
+}
+
+// right
+
+.header-hero-info__right {
+  animation: toLeft 1s ease-in 0.5s;
+  animation-fill-mode: backwards;
+}
