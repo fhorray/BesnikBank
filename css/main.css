@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #f6fbff;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif; }
+
+html {
+  font-size: 62.5%; }
+
+a {
+  text-decoration: none; }
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem 0; }
+  .header-menu .menu-items {
+    display: flex;
+    gap: 2.5rem; }
+    .header-menu .menu-items li {
+      list-style: none;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 1.4rem; }
+      .header-menu .menu-items li a,
+      .header-menu .menu-items li a:active {
+        color: #404041; }
+  .header-menu .shopping-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dfdfdf; }
+
+.header-hero-info {
+  display: flex;
+  justify-content: space-evenly; }
+  .header-hero-info__left {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    margin-top: -5rem; }
+    .header-hero-info__left .left__title {
+      font-family: "Bai Jamjuree", sans-serif;
+      font-size: 8rem;
+      margin: 0; }
+      .header-hero-info__left .left__title span {
+        display: block; }
+      .header-hero-info__left .left__title-more::after {
+        content: "";
+        width: 20rem;
+        height: 6rem;
+        border-radius: 50%;
+        border: 3px solid #ff8a1f;
+        display: block;
+        position: relative;
+        bottom: 7.5rem;
+        left: -0.5rem;
+        z-index: -1; }
+    .header-hero-info__left__description {
+      width: 28rem;
+      font-size: 1.8rem; }
+  .header-hero-info .btn-get-card {
+    width: 100%;
+    height: 5rem;
+    margin-top: 3rem; }
+    .header-hero-info .btn-get-card__box-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 5rem;
+      height: 5rem;
+      background-color: black; }
+    .header-hero-info .btn-get-card a {
+      position: relative;
+      bottom: 3.5rem;
+      left: 8rem;
+      font-size: 1.9rem;
+      color: #222223; }
+  .header-hero-info__right img {
+    width: 85rem; }
+
+.header-benefits {
+  width: 100%;
+  margin-bottom: 15rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 12.5rem; }
+  .header-benefits__title {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 3.5rem; }
+    .header-benefits__title span {
+      display: block;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem; }
+      .header-benefits__title span img {
+        width: 2.5rem;
+        filter: drop-shadow(0 0 1rem rgba(255, 118, 49, 0.5)); }
+  .header-benefits__item {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 15%; }
+    .header-benefits__item img {
+      width: 4.32rem; }
+    .header-benefits__item__second-title {
+      font-size: 2rem; }
+
+.second-benefits {
+  width: 100%;
+  height: 41.7rem;
+  background-color: rgba(82, 192, 255, 0.25);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative; }
+  .second-benefits img {
+    position: absolute;
+    width: 9rem;
+    height: 9rem;
+    top: -4.5rem;
+    left: 50%; }
+  .second-benefits__item {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 15%; }
+    .second-benefits__item span {
+      display: block;
+      font-family: "Bai Jamjuree", sans-serif;
+      font-size: 3rem;
+      font-weight: 500; }
+  .second-benefits__description {
+    width: 80%;
+    color: #5f5f64; }
+
+.data-customer {
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  padding: 10rem; }
+  .data-customer h2 {
+    font-size: 8rem;
+    font-family: "Bai Jamjuree", sans-serif; }
+  .data-customer p {
+    width: 40%;
+    color: #767e7e;
+    text-align: center; }
+  .data-customer__info {
+    display: flex; }
+    .data-customer__info__item {
+      border: 0.14rem solid #a9b3ab;
+      padding: 7rem 10rem;
+      margin-left: -0.14rem; }
+      .data-customer__info__item:first-child {
+        border-left: none;
+        border-right: none;
+        border-image: linear-gradient(to right, #fff, #a9b3ab) 1; }
+      .data-customer__info__item:last-child {
+        border-right: none;
+        border-left: none;
+        border-image: linear-gradient(to left, #fff, #a9b3ab) 1; }
+
+.third-benefits {
+  width: 100%;
+  height: 61.9rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5rem 0; }
+  .third-benefits__info {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem; }
+    .third-benefits__info h2 {
+      font-size: 5.2rem;
+      font-family: "Bai Jamjuree", sans-serif;
+      width: 70%; }
+    .third-benefits__info p {
+      width: 62%;
+      color: #727272; }
+    .third-benefits__info__item {
+      display: flex;
+      justify-content: flex-start;
+      gap: 4rem; }
+      .third-benefits__info__item img {
+        height: 6rem; }
+      .third-benefits__info__item-info {
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem; }
+        .third-benefits__info__item-info h3 {
+          font-family: "Bai Jamjuree", sans-serif; }
+
+.newsletter-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #52c0ff;
+  height: 60rem;
+  width: 100%;
+  padding: 5rem 20rem; }
+  .newsletter-section__left {
+    display: flex;
+    flex-direction: column;
+    gap: 5.5rem; }
+    .newsletter-section__left img {
+      width: 9.5rem; }
+    .newsletter-section__left p {
+      font-size: 1.8rem;
+      width: 60%;
+      color: #414449;
+      font-weight: 600;
+      margin-right: 10rem; }
+  .newsletter-section__right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10rem;
+    position: relative; }
+    .newsletter-section__right h2 {
+      font-family: "Bai Jamjuree", sans-serif;
+      font-size: 6rem;
+      width: 60rem;
+      border-left: 8px solid #718176;
+      padding: 0 5rem; }
+    .newsletter-section__right a {
+      background-color: #e15c19;
+      padding: 2.5rem 7rem;
+      color: #fff;
+      border: none;
+      font-size: inherit;
+      font-weight: 600; }
+  .newsletter-section__credit-card {
+    width: 60rem;
+    position: relative;
+    top: 1rem;
+    right: -10rem; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 18.5rem;
+  padding: 5rem;
+  margin-bottom: 5rem;
+  gap: 10rem; }
+  footer .left-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    footer .left-menu .left-menu__nav ul {
+      display: flex;
+      gap: 3rem; }
+      footer .left-menu .left-menu__nav ul li {
+        list-style: none;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        color: #404041; }
+    footer .left-menu .right-menu__nav ul {
+      display: flex;
+      align-items: center;
+      gap: 3rem; }
+      footer .left-menu .right-menu__nav ul li {
+        list-style: none;
+        font-weight: 600;
+        font-size: 1.4rem;
+        color: #404041; }
+        footer .left-menu .right-menu__nav ul li img {
+          height: 1.5rem; }
+    footer .left-menu a, footer .left-menu a:active {
+      color: #404041; }
+  footer .attribution {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30rem;
+    color: rgba(27, 27, 27, 0.35); }
+    footer .attribution__line-footer {
+      width: 40%;
+      height: 2px;
+      background-color: rgba(27, 27, 27, 0.35); }

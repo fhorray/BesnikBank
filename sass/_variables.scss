@@ -1,0 +1,15 @@
+// Primary colors
+$bg-color: #f6fbff;
+$link-color: #404041;
+$stroke-color: #dfdfdf;
+$bai-jamjuree: "Bai Jamjuree", sans-serif;
+
+// Mixins
+@mixin backgroundColorBlue($opacity) {
+  background-color: rgba(82, 192, 255, $opacity);
+}
+
+@mixin h1Title {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 8rem;
+}

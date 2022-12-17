@@ -1,0 +1,151 @@
+// Menu Section
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem 0;
+
+  // li's style
+  .menu-items {
+    display: flex;
+    gap: 2.5rem;
+
+    & li {
+      list-style: none;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 1.4rem;
+
+      & a,
+      & a:active {
+        color: $link-color;
+      }
+    }
+  }
+  // END li's style
+
+  // Shopping icon style
+  .shopping-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $stroke-color;
+  }
+  //END Shopping icon style
+}
+
+.header-hero-info {
+  display: flex;
+  justify-content: space-evenly;
+
+  &__left {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    margin-top: -5rem;
+
+    .left__title {
+      @include h1Title;
+      margin: 0;
+
+      & span {
+        display: block;
+      }
+
+      &-more::after {
+        content: "";
+        width: 20rem;
+        height: 6rem;
+        border-radius: 50%;
+        border: 3px solid #ff8a1f;
+        display: block;
+        position: relative;
+        bottom: 7.5rem;
+        left: -0.5rem;
+        z-index: -1;
+      }
+    }
+
+    // Hero Description
+    &__description {
+      width: 28rem;
+      font-size: 1.8rem;
+    }
+  }
+
+  // BTN GET YOUR CARD
+
+  .btn-get-card {
+    width: 100%;
+    height: 5rem;
+    // padding: 1rem;
+    margin-top: 3rem;
+
+    &__box-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 5rem;
+      height: 5rem;
+      background-color: black;
+    }
+
+    & a {
+      position: relative;
+      bottom: 3.5rem;
+      left: 8rem;
+      font-size: 1.9rem;
+      color: #222223;
+    }
+  }
+
+  &__right {
+    & img {
+      width: 85rem;
+    }
+  }
+}
+
+// Benefits Section
+.header-benefits {
+  width: 100%;
+  margin-bottom: 15rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 12.5rem;
+
+  &__title {
+    font-family: $bai-jamjuree;
+    font-size: 3.5rem;
+
+    & span {
+      display: block;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+
+      & img {
+        width: 2.5rem;
+        filter: drop-shadow(0 0 1rem rgba(255, 118, 49, 0.5));
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 15%;
+
+    & img {
+      width: 4.32rem;
+    }
+
+    &__second-title {
+      font-size: 2rem;
+    }
+  }
+}
