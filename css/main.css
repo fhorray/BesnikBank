@@ -360,8 +360,16 @@ footer {
     transform: translateY(10rem);
     opacity: 0; }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1; } }
+
+@keyframes toDown {
+  0% {
+    transform: translateY(0rem);
+    opacity: 1; }
+  100% {
+    transform: translateY(10rem);
+    opacity: 0; } }
 
 @keyframes fadeIn {
   0% {
@@ -393,4 +401,8 @@ footer {
 
 .header-hero-info__right {
   animation: toLeft 1s ease-in 0.5s;
+  animation-fill-mode: backwards; }
+
+.teste {
+  animation: toTop 1s ease-out 5s;
   animation-fill-mode: backwards; }
